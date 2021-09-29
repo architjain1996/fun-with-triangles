@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+:root {
+  --primary-color: #ffda07;
+  --off-white: #f3f4f6;
+  --dark-gray: #6b7280;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 2rem;
+}
+
+hr {
+  margin: 5rem 0rem;
+}
+
+
+/** spaces **/
+
+.margin-md {
+  margin: 5rem;
+}
+
+/** container **/
+.container {
+  padding: 1rem 3rem;
+}
+
+.container-center {
+  max-width: 600px;
+  margin: auto;
+}
+
+/** links **/
+.link {
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.link-primary {
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+  color: white;
+  display: block;
+  width:8rem;
+  margin-left: 25rem;
+  margin: 1rem 1rem 1rem 0rem;
+}
+
+.link-secondary {
+  color: var(--primary-color);
+  border-radius: 0.5rem;
+  border: 1px solid var(--primary-color);
+  display: block;
+  max-width: 140px;
+  margin: 1rem 1rem 1rem 0rem;
+}
+
+/** look into BEM naming convention for CSS **/
+
+/** lists **/
+
+.list-non-bullet {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.list-item-inline {
+  display: inline;
+  padding: 2rem;
+}
+
+/** navigation **/
+
+.navigation {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2rem;
+  border-bottom-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+
+.navigation .nav-brand {
+  font-weight: bold;
+  text-align: right;
+  font-size: 2rem;
+  padding: 0rem;
+}
+
+.navigation .nav-pills {
+  text-align: left;
+}
+
+.navigation .link {
+  color: white;
+}
+
+.navigation .link-active {
+  font-weight: bold;
+}
+
+/** header **/
+.hero-heading {
+  text-align: center;
+}
+
+.hero{
+  margin-top:1rem
+}
+
+.para {
+  text-align: center;
+}
+
+.card {
+  width: 20rem;
+  position: relative;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.card:hover .img-top {
+  display: inline;
+}
+
+/** sections **/
+
+.section {
+  padding: 2rem;
+}
+
+.section > div > p {
+  text-align: justify;
+}
+
+.section h1 {
+  text-align: center;
+}
+
+.ow {
+  background-color: var(--off-white);
+}
